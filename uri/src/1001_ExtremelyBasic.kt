@@ -1,5 +1,6 @@
-class ExtremelyBasic {
-    import java.util.*
+import java.util.*
+
+class `1001_ExtremelyBasic` {
 
     fun main(args: Array<String>) {
         val leitor = Scanner(System.`in`)
