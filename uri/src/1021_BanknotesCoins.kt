@@ -48,6 +48,6 @@ class `1021_BanknotesCoins` {
         println("${(moedasVinteCinco / 0.25).toInt()} moeda(s) de R$ 0.25")
         println("${(moedasDez / 0.10).toInt()} moeda(s) de R$ 0.10")
         println("${(moedasCinco / 0.05).toInt()} moeda(s) de R$ 0.05")
-        println("${String.format("%.0f", moedasZeroUm / 0.01)} moeda(s) de R$ 0.01")
+        println("String.format("%.0f", moedasZeroUm / 0.01) moeda(s) de R$ 0.01")
     }
 }
