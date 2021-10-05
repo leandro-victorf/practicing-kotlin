@@ -14,6 +14,8 @@ class `1080_HighestPosition` {
                 position = i
             }
         }
+        println("$bigger")
+        println("$position")
 
     }
 }
