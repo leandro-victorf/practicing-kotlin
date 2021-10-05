@@ -7,6 +7,6 @@ class `1073_EvenSquare` {
 
         if (number.mod(2) == 1) number++
 
-        for (i in 2..number) println("$i^$i = ${i*i}")
+        for (i in 2..number step 2) println("$i^$i = ${i*i}")
     }
 }
