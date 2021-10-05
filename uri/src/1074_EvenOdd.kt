@@ -5,8 +5,6 @@ class `1074_EvenOdd` {
         val reader = Scanner(System.`in`)
         val size = reader.nextInt()
         var numbers = mutableListOf<Int>()
-        var counterIn = 0
-        var counterOut = 0
 
         for (i in 0 until size) {
             numbers[i] = reader.nextInt()
