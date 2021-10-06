@@ -3,23 +3,27 @@ import java.util.*
 class `1115_Quadrant` {
     fun main(args: Array<String>) {
         val reader = Scanner(System.`in`)
-        val numberX = reader.nextInt()
-        val numberY = reader.nextInt()
+        var numberX = reader.nextInt()
+        var numberY = reader.nextInt()
+        while (numberX != null) {
 
-        if (numberX > 0) {
-            if (numberY > 0) {
-                println("primeiro")
+            if (numberX > 0) {
+                if (numberY > 0) {
+                    println("primeiro")
+                } else {
+                    println("quarto")
+                }
+            } else if (numberX < 0) {
+                if (numberY > 0) {
+                    println("segundo")
+                } else {
+                    println("terceiro")
+                }
             } else {
-                println("quarto")
+                println()
             }
-        } else if (numberX < 0) {
-            if (numberY > 0) {
-                println("segundo")
-            } else {
-                println("terceiro")
-            }
-        }else{
-            println()
+            numberX = reader.nextInt()
+            numberY = reader.nextInt()
         }
     }
 }
