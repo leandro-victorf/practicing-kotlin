@@ -5,6 +5,6 @@ class `1177_ArrayFillII` {
         val reader = Scanner(System.`in`)
         val number = reader.nextInt()
 
-        for (i in 0..1000) println("N[$i] = ${i.mod(number)}")
+        for (i in 0..999) println("N[$i] = ${i.mod(number)}")
     }
 }
