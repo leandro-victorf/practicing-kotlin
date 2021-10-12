@@ -9,7 +9,7 @@ class `1179_ArrayFillIV` {
 
         for (i in 1..15){
             numbers.add(reader.nextInt())
-            
+
         }
 
     }
