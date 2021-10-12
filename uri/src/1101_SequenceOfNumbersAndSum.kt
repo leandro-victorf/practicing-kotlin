@@ -7,13 +7,16 @@ class `1101_SequenceOfNumbersAndSum` {
         val numberTwo = reader.nextInt()
         var sum = 0
 
-        if (numberOne != 0 && numberTwo != 0) {
 
-            for (i in numberTwo..numberOne) {
-                print("$i ")
-                sum += i
+        for (j in 1..3) {
+            if (numberOne != 0 && numberTwo != 0) {
+
+                for (i in numberTwo..numberOne) {
+                    print("$i ")
+                    sum += i
+                }
+                println("Sum=$sum")
             }
-            println("Sum=$sum")
         }
     }
 }
