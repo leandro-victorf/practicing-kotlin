@@ -7,7 +7,7 @@ class `1074_EvenOdd` {
         var numbers = mutableListOf<Int>()
 
         for (i in 0 until size) {
-            numbers[i] = reader.nextInt()
+            numbers.add(i, reader.nextInt())
         }
 
         for (i in numbers) {
