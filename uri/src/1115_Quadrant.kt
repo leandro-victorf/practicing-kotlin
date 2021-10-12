@@ -3,9 +3,9 @@ import java.util.*
 class `1115_Quadrant` {
     fun main(args: Array<String>) {
         val reader = Scanner(System.`in`)
-        var numberX = reader.nextInt()
-        var numberY = reader.nextInt()
-        while (numberX != null) {
+        for (i in 1..9) {
+            var numberX = reader.nextInt()
+            var numberY = reader.nextInt()
 
             if (numberX > 0) {
                 if (numberY > 0) {
@@ -22,8 +22,6 @@ class `1115_Quadrant` {
             } else {
                 println()
             }
-            numberX = reader.nextInt()
-            numberY = reader.nextInt()
         }
     }
 }
