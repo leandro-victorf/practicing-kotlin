@@ -7,6 +7,7 @@ class `1071_SumOfConsecutiveOddNumbersI` {
         val valueTwo = reader.nextInt()
         var start = 0
         var end = 0
+        var sum = 0
         if (valueOne >= valueTwo){
             start = valueOne
             end = valueTwo
@@ -18,13 +19,10 @@ class `1071_SumOfConsecutiveOddNumbersI` {
         if (start.mod(2)  == 0){
             start += 1
         }
-        if (end.mod(2)  == 0){
-            end += 1
-        }
 
         for (i in start..end step 2){
-            println(i)
+           sum += i
         }
-
+        println(sum)
     }
 }

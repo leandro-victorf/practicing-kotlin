@@ -9,7 +9,7 @@ class `1072_IntervalTwo` {
         var counterOut = 0
 
         for(i  in 0 until size){
-            numbers[i] = reader.nextInt()
+            numbers.add(i,reader.nextInt())
         }
 
         for (i in numbers) {
