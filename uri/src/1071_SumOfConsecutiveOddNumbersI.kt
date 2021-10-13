@@ -5,22 +5,9 @@ class `1071_SumOfConsecutiveOddNumbersI` {
         val reader = Scanner(System.`in`)
         val valueOne = reader.nextInt()
         val valueTwo = reader.nextInt()
-        var start = 0
-        var end = 0
         var sum = 0
-        if (valueOne >= valueTwo){
-            start = valueOne
-            end = valueTwo
-        }else {
-            start = valueOne
-            end = valueTwo
-        }
 
-        if (start.mod(2)  == 0){
-            start += 1
-        }
-
-        for (i in start..end step 2){
+        for (i in valueOne..valueTwo step 2){
            sum += i
         }
         println(sum)
