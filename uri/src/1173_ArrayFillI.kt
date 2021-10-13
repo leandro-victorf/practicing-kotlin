@@ -8,7 +8,7 @@ class `1173_ArrayFillI` {
         val number = reader.nextInt()
 
         for ( i in 0 until 10){
-            println("N[$i] = ${number*(2.pow(i))}")
+            println("N[$i] = ${String.format("%.0f", number*(2.0.pow(i)))}")
         }
     }
 }
