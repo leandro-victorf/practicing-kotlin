@@ -5,12 +5,14 @@ class `1181_LineArray` {
         val reader = Scanner(System.`in`)
         val lineNumber = reader.nextInt()
         val operation = reader.next()
+        val arrayNumbers = mutableListOf<Double>()
         var sum = 0.0
         var counter = 0
 
-        for (i in 0..11) {
-            var term = reader.nextDouble()
-            sum += term
+        for (i in 0..143) arrayNumbers.add(i, reader.nextDouble())
+
+        for (i in (12 * lineNumber)..(12 * lineNumber + 11)) {
+            sum += arrayNumbers[i]
             counter++
         }
 
