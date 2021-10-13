@@ -9,7 +9,7 @@ class `1142_Pum` {
             if (i.mod(4) == 0) {
                 println("PUM")
             } else {
-                println("$i ")
+                print("$i ")
             }
         }
     }
