@@ -10,7 +10,7 @@ class `1175_ArrayChangeI` {
         }
 
         for (i in 19 downTo 0) {
-            println("N[ ${19 - i} ] = ${numberArray[i]}")
+            println("N[${19 - i}] = ${numberArray[i]}")
         }
     }
 }
