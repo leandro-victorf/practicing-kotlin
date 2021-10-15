@@ -28,7 +28,7 @@ class `1534_Array123` {
 //    var numberLine = reader.nextInt()
 //    for (i in 0 until numberLine) {
 //        for (j in 0 until numberLine) {
-//            when (j) {
+//            do {
 //                (numberLine - 1 - i) -> print(2)
 //                i -> print(1)
 //                else -> print(3)

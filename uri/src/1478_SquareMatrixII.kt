@@ -11,8 +11,10 @@ class `1478_SquareMatrixII` {
             else {
                 for (i in 0 until sizeMatrix) {
                     for (j in 0 until sizeMatrix) {
-                        if ( j == (sizeMatrix-1)) println("${abs(i - j) + 1}")
-                        else print("${abs(i - j) + 1}")
+                        if (j == (sizeMatrix - 1)) println("${abs(i - j) + 1}")
+                        else print("${abs(i - j) + 1} ")
+
+                        if (i == (sizeMatrix - 1) && j == (sizeMatrix - 1)) println()
                     }
                     println()
                 }

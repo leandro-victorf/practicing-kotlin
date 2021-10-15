@@ -6,7 +6,7 @@ class `1073_EvenSquare` {
         val number = reader.nextLong()
 
         for (i in 2..number step 2) {
-            println("$i^$i = ${i * i}")
+            println("$i^2 = ${i * i}")
         }
     }
 }
