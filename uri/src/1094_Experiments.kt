@@ -1,6 +1,6 @@
 import java.util.*
 
-//class `1094_Experiments` {
+class `1094_Experiments` {
     fun main(args: Array<String>) {
 
         val reader = Scanner(System.`in`)
@@ -35,4 +35,4 @@ import java.util.*
         println("Percentual de sapos: ${String.format("%.2f", (counterFrog / total) * 100)} %")
 
     }
-//}
+}
