@@ -16,11 +16,11 @@ class `1189_LeftArea` {
 
         for (i in 1..10) {
             if (i < 6) {
-                for (j in 0..i) {
+                for (j in 0..(i - 1)) {
                     sum += arrayNumbers[i][j]
                 }
             } else {
-                for (j in 0..(11 - i)) {
+                for (j in 0..(10 - i)) {
                     sum += arrayNumbers[i][j]
                 }
             }
