@@ -7,8 +7,9 @@ class `1145_LogicalSequence2` {
         val numberTerm = reader.nextInt()
 
         for (i in 1..numberTerm) {
-            print("$i ")
+            print("$i")
             if (i.mod(sizeLine) == 0) println()
+            else print(" ")
         }
     }
 }
