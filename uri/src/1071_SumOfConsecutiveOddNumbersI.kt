@@ -3,13 +3,20 @@ import java.util.*
 class `1071_SumOfConsecutiveOddNumbersI` {
     fun main(args: Array<String>) {
         val reader = Scanner(System.`in`)
-        val valueOne = reader.nextInt()
-        val valueTwo = reader.nextInt()
+        var valueOne = reader.nextInt()
+        var valueTwo = reader.nextInt()
+        var aux: Int
         var sum = 0
 
-        for (i in valueOne..valueTwo step 2){
-           sum += i
+        if (valueOne > valueTwo) {
+            aux = valueTwo
+            valueTwo = valueOne
+            valueOne = aux
         }
-        println(sum)
+
+        for (i in (valueOne + 1) until valueTwo) {
+            if (i % 2 != 0) sum += i
+        }
+        println("$sum")
     }
 }
