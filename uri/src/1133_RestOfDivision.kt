@@ -3,12 +3,19 @@ import java.util.*
 class `1133_RestOfDivision` {
     fun main(args: Array<String>) {
         val reader = Scanner(System.`in`)
-        val numberOne = reader.nextInt()
-        val numberTwo = reader.nextInt()
+        var numberOne = reader.nextInt()
+        var numberTwo = reader.nextInt()
+        var aux: Int
+
+        if (numberOne > numberTwo) {
+            aux = numberTwo
+            numberTwo = numberOne
+            numberOne = aux
+        }
 
         for (i in numberOne..numberTwo) {
-            if (i.mod(5) == 2 || i.mod(5) == 3) {
-                println("$i")
+            if (i % 5 == 2 || i % 5 == 3) {
+                if (i > 2) println("$i")
             }
         }
     }
