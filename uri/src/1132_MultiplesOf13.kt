@@ -3,16 +3,20 @@ import java.util.*
 class `1132_MultiplesOf13` {
     fun main(args: Array<String>) {
         val reader = Scanner(System.`in`)
-        val numberOne = reader.nextInt()
-        val numberTwo = reader.nextInt()
-        var sum = 0
+        var numberOne = reader.nextLong()
+        var numberTwo = reader.nextLong()
+        var aux: Long
+        var sum = 0L
 
-        for (i in numberOne..numberTwo) {
-            if (i.mod(13) == 0) {
-                sum += i
-            }
+        if (numberOne > numberTwo) {
+            aux = numberTwo
+            numberTwo = numberOne
+            numberOne = aux
         }
 
+        for (i in numberOne..numberTwo) if (i.mod(13L) != 0L) {
+            sum += i
+        }
         println("$sum")
     }
 }
